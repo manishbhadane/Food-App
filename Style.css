@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ /** css variable **/
+ :root{
+    --navbar-height:59px;
+ }
+ /** navbar **/
+ .nav{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+ }
+ /** logo and img **/
+ .logo{
+    margin: 10px 35px;
+ }
+.logo img{
+     height: 60px;
+     margin: 3px 6px;
+}
+
+/** listing **/
+.nav ul{
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+.nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.nav ul li{
+    
+    font-size: 1.3rem;
+   list-style: none;
+}
+.nav ul li a{
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav ul li a:hover{
+   background-color: white;
+    color: black;
+}
+
+/** Home Section **/
+#home{
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+}
+#home::before{
+    content: "";
+    background-image: url("Extra_hungry.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.70;
+}
+
+/** Services Section **/
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 18px ;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+ }
+
+/** Client Section **/
+#client-section{
+    position: relative;
+    /* height: 344px; */
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("tomato.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 35px;
+}
+#clients img{
+    height: 124px;
+}
+
+/** Contact Section **/
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("contact.jpg") no-repeat center center/cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contactbox form{
+    width: 40%;
+
+}
+
+#contactbox label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+/** Footer **/
+footer{
+    background-color: black;
+    color: white;
+    padding: 6px 20px ;
+}
+/** utility classes **/
+#home h1{
+     color: white;
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.1rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(41, 24, 24, 0.87);
+    color: white;
+    margin: 17px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 rgba(41, 24, 24, 0.87);
+    transition: transform 0.2s, box-shadow 0.2s;
+   
+}
+
+.btn:active{
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 0 0 0 rgba(41, 24, 24, 0.87);
+}
+
+/** About YBR'S **/
+#home2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    background-color:#f2f2f2;
+}
+
+#home2 .h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.1rem;
+    padding: 12px;
+}
+#home2 img{
+    width: 50%;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px black;
+}
